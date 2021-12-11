@@ -42,6 +42,7 @@ function App() {
       await players.add({
         uid: user.uid,
         name: user.displayName,
+        email: user.email,
         createdAt: serverTimestamp(),
         answers: answers,
       });
