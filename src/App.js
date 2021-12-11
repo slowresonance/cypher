@@ -6,8 +6,6 @@ import cards from "./content/cards.json";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import "firebase/compat/auth";
-import { collection, query, where } from "firebase/firestore";
-
 import { useAuthState } from "react-firebase-hooks/auth";
 
 firebase.initializeApp({
@@ -17,7 +15,7 @@ firebase.initializeApp({
   storageBucket: "cypher-9d473.appspot.com",
   messagingSenderId: "460802231045",
   appId: "1:460802231045:web:860614a8b4b53736dcc56c",
-  measurementId: "${config.measurementId}",
+  // measurementId: "${config.measurementId}",
 });
 
 const auth = firebase.auth();
