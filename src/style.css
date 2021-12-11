@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.78em;
+  font-weight: 300;
+  color: var(--white-b);
+  background-color: var(--black-0);
+}
+
+#app {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+
+#login {
+  margin: auto;
+}
+
+#quiz {
+  max-width: 90ch;
+  margin: auto;
+  position: relative;
+}
+
+.card-container {
+  padding: 2em;
+  margin: auto auto;
+}
+
+.card-head {
+  margin-bottom: 2em;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.option {
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 100%;
+  background-color: var(--black-1);
+  border: 1px solid var(--black-3);
+  cursor: pointer;
+}
+
+.option label {
+  cursor: pointer;
+}
+
+.active,
+.active .label-button {
+  border-color: var(--white-e);
+}
+
+#clicked,
+#clicked .label-button {
+  border-color: var(--white-e);
+  background-color: var(--black-0);
+}
+
+.option input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.option label {
+  display: flex;
+  padding: 8px 22px 8px 10px;
+}
+
+.label-button {
+  color: var(--black-8);
+  background-color: var(--black-1);
+  border: 1px solid var(--black-3);
+  display: inline-block;
+  text-align: center;
+  min-width: 12px;
+  height: max-content;
+  font-size: 0.875rem;
+  line-height: 2em;
+  padding: 0 8px;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+
+.button {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.78em;
+
+  color: var(--black-0);
+  background-color: var(--white-f);
+
+  font-weight: 400;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 30px;
+
+  min-width: 200px;
+
+  cursor: pointer;
+
+  padding: 4px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+#proceed {
+  position: absolute;
+  right: 2em;
+}
+
+:root {
+  --black-0: #000000;
+  --black-1: #111111;
+  --black-3: #333333;
+  --black-8: #888888;
+  --white-b: #bbbbbb;
+  --white-c: #cccccc;
+  --white-e: #eeeeee;
+  --white-f: #ffffff;
+}

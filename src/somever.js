@@ -6,9 +6,9 @@ import cards from "./content/cards.json";
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
 import "firebase/compat/auth";
-import { collection, query, where } from "firebase/firestore";
 
 import { useAuthState } from "react-firebase-hooks/auth";
+import { useCollectionData } from "react-firebase-hooks/firestore";
 
 firebase.initializeApp({
   apiKey: "AIzaSyBxU8G07VGdiOpJ5NG61g9oUW-RbcsX19U",
@@ -21,6 +21,7 @@ firebase.initializeApp({
 });
 
 const auth = firebase.auth();
+const firestore = firebase.firestore();
 
 const answers = [];
 const noOfCards = cards.length;
@@ -29,51 +30,31 @@ function App() {
   const [user] = useAuthState(auth);
   const [currentCardIndex, setCardIndex] = useState(0);
   const [selected, setSelected] = useState("");
-  const [buttonText, setButtonText] = useState("Next");
+  const [buttonText, setButtonText] = useState("Text");
 
   const selectHandler = (id) => {
     setSelected(id);
   };
 
-  const onSubmit = async () => {
-    if (user) {
-      const { serverTimestamp } = firebase.firestore.FieldValue;
-
-      const players = firebase.firestore().collection("players");
-
-      await players.add({
-        uid: user.uid,
-        name: user.displayName,
-        createdAt: serverTimestamp(),
-        answers: answers,
-      });
-
-      auth.signOut();
-    }
-  };
-
-  const onNext = () => {
+  const onSubmit = () => {
     const nextCardIndex = currentCardIndex + 1;
-    if (selected !== "") {
-      setSelected("");
 
-      if (currentCardIndex === noOfCards - 1) {
-        onSubmit();
+    if (currentCardIndex < noOfCards) {
+      if (nextCardIndex === noOfCards - 1) {
+        setButtonText("Submit & Sign Out");
       }
 
-      if (nextCardIndex < noOfCards) {
+      console.log(selected);
+
+      if (selected) {
         answers.push({
           cardId: cards[currentCardIndex].cardId,
           optId: selected,
         });
-
-        console.log(answers);
-        setCardIndex(nextCardIndex);
-
-        if (nextCardIndex === noOfCards - 1) {
-          setButtonText("Submit");
-        }
       }
+
+      setCardIndex(nextCardIndex);
+      console.log(answers);
     }
   };
 
@@ -85,7 +66,7 @@ function App() {
   return (
     <div id="app">
       {user ? (
-        <div id="quiz">
+        <div className="quiz">
           <Card
             key={cards[currentCardIndex].cardId}
             cardId={cards[currentCardIndex].cardId}
@@ -95,17 +76,15 @@ function App() {
             onSelect={selectHandler}
           />
 
-          <Button id="proceed" text={buttonText} onClick={onNext}>
+          <Button id="submit" text={buttonText} onClick={onSubmit}>
             Next
           </Button>
         </div>
       ) : (
-        <div id="login">
-          <Button
-            text={`Sign in with Google`}
-            onClick={signInWithGoogle}
-          ></Button>
-        </div>
+        <Button
+          text={`Sign in with Google`}
+          onClick={signInWithGoogle}
+        ></Button>
       )}
     </div>
   );
