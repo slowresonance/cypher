@@ -35,7 +35,7 @@ body {
 
 .card-container {
   padding: 2em;
-  margin: auto auto;
+  margin: auto auto 4em auto;
 }
 
 .card-head {
@@ -100,6 +100,23 @@ body {
   margin-right: 1em;
 }
 
+#login {
+  padding: 2em;
+}
+
+#instructions {
+  margin-bottom: 4em;
+}
+
+#inst-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+#inst-head {
+  font-weight: 600;
+}
+
 .button {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -119,6 +136,7 @@ body {
 
   height: 30px;
 
+  max-width: 250px;
   min-width: 200px;
 
   cursor: pointer;
@@ -135,6 +153,7 @@ body {
 #proceed {
   position: absolute;
   right: 2em;
+  bottom: 2em;
 }
 
 :root {

@@ -100,6 +100,22 @@ function App() {
         </div>
       ) : (
         <div id="login">
+          <div id="instructions">
+            <div id="inst-head">Instructions</div>
+            <div id="inst-body">
+              <ol id="inst-list">
+                <li>You will be given challenge cards containing riddles.</li>
+                <li>The cards must be answered in either a 'Yes' or 'No'. </li>
+                <li>
+                  You will be judged based on 4 parameters: Inventory, Capital,
+                  Team-work, and Technical support.
+                </li>
+                <li>
+                  You'll have to maintain these parameters to finish the round.
+                </li>
+              </ol>
+            </div>
+          </div>
           <Button
             text={`Sign in with Google`}
             onClick={signInWithGoogle}
