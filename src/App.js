@@ -37,9 +37,9 @@ function App() {
     if (user) {
       const { serverTimestamp } = firebase.firestore.FieldValue;
 
-      const players = firebase.firestore().collection("players");
+      const players = firebase.firestore().collection("players").doc(user.uid);
 
-      await players.add({
+      await players.set({
         uid: user.uid,
         name: user.displayName,
         email: user.email,
@@ -48,6 +48,7 @@ function App() {
       });
 
       auth.signOut();
+      setTimeout(window.location.reload(false), 1000);
     }
   };
 
@@ -57,6 +58,11 @@ function App() {
       setSelected("");
 
       if (currentCardIndex === noOfCards - 1) {
+        answers.push({
+          cardId: cards[currentCardIndex].cardId,
+          optId: selected,
+        });
+
         onSubmit();
       }
 
