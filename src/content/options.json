@@ -60,46 +60,6 @@
     }
   },
   {
-    "optId": "mW62tlx9HD",
-    "content": "YES: partnering with local businesses and charities",
-    "params": {
-      "capital": 20,
-      "team": 0,
-      "inventory": 0,
-      "resources": 0
-    }
-  },
-  {
-    "optId": "0QDeifsx79",
-    "content": "NO: adopt a culture of excellent service that customers found value in.",
-    "params": {
-      "capital": 0,
-      "team": 0,
-      "inventory": 0,
-      "resources": 0
-    }
-  },
-  {
-    "optId": "O4nNQBKAKg",
-    "content": "YES: ask franchisees for more money where it was needed",
-    "params": {
-      "capital": 20,
-      "team": -20,
-      "inventory": 0,
-      "resources": -20
-    }
-  },
-  {
-    "optId": "ikYJYCsrwL",
-    "content": "NO:forgoing ad spending in favor of better profits can be a mistake",
-    "params": {
-      "capital": -20,
-      "team": 20,
-      "inventory": -20,
-      "resources": 0
-    }
-  },
-  {
     "optId": "SHxXbHOLBj",
     "content": "YES: Hike in salary will be an ethical solution.",
     "params": {
@@ -140,46 +100,6 @@
     }
   },
   {
-    "optId": "jhEn7VMPJ8",
-    "content": "YES: collaborate with a team energy, enthusiasm, and respect in meetings.",
-    "params": {
-      "capital": 0,
-      "team": 20,
-      "inventory": 20,
-      "resources": 0
-    }
-  },
-  {
-    "optId": "pBXOKHAskt",
-    "content": "NO: Hiring experts for good team bonding and efficiency.",
-    "params": {
-      "capital": -20,
-      "team": 20,
-      "inventory": 0,
-      "resources": 20
-    }
-  },
-  {
-    "optId": "zkr6X2WL5E",
-    "content": "YES: cut down on stores to restore its brand exclusivity.",
-    "params": {
-      "capital": 0,
-      "team": 0,
-      "inventory": 0,
-      "resources": 0
-    }
-  },
-  {
-    "optId": "asKiotgScv",
-    "content": "NO: Starbucks would either have to cut prices",
-    "params": {
-      "capital": -20,
-      "team": 0,
-      "inventory": 0,
-      "resources": 0
-    }
-  },
-  {
     "optId": "aem40RO5O7",
     "content": "YES: Adopting Local Branding will increase sales over the boundaries",
     "params": {
@@ -197,66 +117,6 @@
       "team": 0,
       "inventory": 20,
       "resources": 20
-    }
-  },
-  {
-    "optId": "J6NuPJLUID",
-    "content": "YES: creating short meetings of daily happenings so that staff could offer more to guests,improving customer loyalty.",
-    "params": {
-      "capital": 0,
-      "team": 20,
-      "inventory": 20,
-      "resources": 0
-    }
-  },
-  {
-    "optId": "TyZUP6LavI",
-    "content": "NO: appoint new staff members who are aware of fashion sense",
-    "params": {
-      "capital": -20,
-      "team": 20,
-      "inventory": 0,
-      "resources": 20
-    }
-  },
-  {
-    "optId": "oA1i7jatDR",
-    "content": "YES: Ravi has to assign marketing budget",
-    "params": {
-      "capital": -20,
-      "team": 0,
-      "inventory": -20,
-      "resources": 0
-    }
-  },
-  {
-    "optId": "FlPwNOLcHV",
-    "content": "NO: Online Campaigns like #createyourownapparel might work",
-    "params": {
-      "capital": 20,
-      "team": 0,
-      "inventory": 0,
-      "resources": 0
-    }
-  },
-  {
-    "optId": "nmMClkOtkj",
-    "content": "YES: slashing their number of products from 2,500 to 300",
-    "params": {
-      "capital": 20,
-      "team": 20,
-      "inventory": -20,
-      "resources": 0
-    }
-  },
-  {
-    "optId": "Z1thWG1C5b",
-    "content": "NO: streamlining  a price reduction ",
-    "params": {
-      "capital": -20,
-      "team": -20,
-      "inventory": 0,
-      "resources": 0
     }
   },
   {

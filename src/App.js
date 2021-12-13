@@ -70,7 +70,7 @@ function App() {
         setCardIndex(nextCardIndex);
 
         if (nextCardIndex === noOfCards - 1) {
-          setButtonText("Submit");
+          setButtonText("Submit and Sign Out");
         }
       }
     }
