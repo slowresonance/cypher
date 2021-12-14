@@ -5,11 +5,11 @@
     "options": [
       {
         "optId": "wxP1ky9yxt",
-        "content": "Allow him to continue his presentation."
+        "content": "YES: Allow him to continue his presentation."
       },
       {
         "optId": "Iv3yvG31Pt",
-        "content": "Wasim should have been sent in for a drug test and fired immediately, sent to rehabilitation centre."
+        "content": "NO: Wasim should have been sent in for a drug test and fired immediately, sent to rehabilitation centre."
       }
     ]
   },
@@ -19,11 +19,11 @@
     "options": [
       {
         "optId": "ZYmedc8bwM",
-        "content": "Rebuild of factory and rehire workers."
+        "content": "YES: Rebuild of factory and rehire workers."
       },
       {
         "optId": "MCKqdfsmS9",
-        "content": "Extend the employees 90 days at full pay."
+        "content": "NO: Extend the employees 90 days at full pay."
       }
     ]
   },
@@ -33,11 +33,11 @@
     "options": [
       {
         "optId": "BuoSddgT0Z",
-        "content": "Notably partnering with a local brand with foreign leadership, enjoys a larger market presence."
+        "content": "YES: Notably partnering with a local brand with foreign leadership, enjoys a larger market presence."
       },
       {
         "optId": "YAkAdH6i7H",
-        "content": "With 100% local staff and operating stores as local businesses and community centers."
+        "content": "NO: With 100% local staff and operating stores as local businesses and community centers."
       }
     ]
   },
@@ -47,11 +47,11 @@
     "options": [
       {
         "optId": "SHxXbHOLBj",
-        "content": "Hike in salary will be an ethical solution."
+        "content": "YES: Hike in salary will be an ethical solution."
       },
       {
         "optId": "BWVuHAG0T3",
-        "content": "A pilot program, resigning participants to gradually give up some of their day to day responsibilities to newbies."
+        "content": "NO: A pilot program, resigning participants to gradually give up some of their day to day responsibilities to newbies."
       }
     ]
   },
@@ -61,11 +61,11 @@
     "options": [
       {
         "optId": "4q3L3wCZao",
-        "content": "Look for a successor in the family."
+        "content": "YES: Look for a successor in the family."
       },
       {
         "optId": "z5gxCEwZf3",
-        "content": "Look for an internal candidate rather than heir."
+        "content": "NO: Look for an internal candidate rather than heir."
       }
     ]
   },
@@ -75,11 +75,11 @@
     "options": [
       {
         "optId": "aem40RO5O7",
-        "content": "Adopting Local Branding will increase sales over the boundaries"
+        "content": "YES: Adopting Local Branding will increase sales over the boundaries"
       },
       {
         "optId": "ScCN2GHsra",
-        "content": "Industrialisation and automation might increase sales allover."
+        "content": "NO: Industrialisation and automation might increase sales allover."
       }
     ]
   },
@@ -89,11 +89,11 @@
     "options": [
       {
         "optId": "DnEdaAapwa",
-        "content": "Akshay needs to be fired and the same position should be assigned to Assistant."
+        "content": "YES: Akshay needs to be fired and the same position should be assigned to Assistant."
       },
       {
         "optId": "xLWpUCG6JA",
-        "content": "A proper pilot program and training is enough."
+        "content": "NO: A proper pilot program and training is enough."
       }
     ]
   },
@@ -103,11 +103,11 @@
     "options": [
       {
         "optId": "upf39MQkCg",
-        "content": "An apology advertisement that is funny and catchy to stakeholders will work."
+        "content": "YES: An apology advertisement that is funny and catchy to stakeholders will work."
       },
       {
         "optId": "1IiflM35x6",
-        "content": "Introducing new designs."
+        "content": "NO: Introducing new designs."
       }
     ]
   }
